@@ -57,8 +57,10 @@ const SpacemanCanvas = ({ scrollContainer }) => {
         newPosition = [1, -3.4, 0];
       } else {
         // Large screens
-        newScale = [0.60, 0.60, 0.60];
-        newPosition = [0.25, -3.4, 0];
+        // newScale = [0.60, 0.60, 0.60];
+        newScale = [0.56, 0.56, 0.56];
+        // newPosition = [0.25, -3.4, 0];
+        newPosition = [0.25, -3.6, 0];
       }
 
       setScale(newScale);
