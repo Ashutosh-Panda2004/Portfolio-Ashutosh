@@ -9,7 +9,8 @@ const Hero = ({ scrollContainer }) => {
     <section
       className="parallax bg-black"
       style={{
-        backgroundImage: `url(${spacebgImage})`, // Use the imported image
+        backgroundImage: `url(${spacebgImage})`,
+        // backgroundImage: `url('/assets/spacebg-2.jpg')`,
         backgroundSize: "cover", // Adjusts the image to cover the entire section
         backgroundPosition: "center", // Centers the image
         backgroundAttachment: "fixed", // Creates the parallax effect
