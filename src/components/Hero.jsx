@@ -5,7 +5,7 @@ const Hero = ({ scrollContainer }) => {
   return (
     // <section className="parallax bg-black">
     <section
-      className="parallax bg-black"
+      className="parallax"
       style={{
         backgroundImage: `url('src/assets/spacebg-2.jpg')`,
         backgroundSize: "cover", // Adjusts the image to cover the entire section
