@@ -49,7 +49,7 @@ const SpacemanCanvas = ({ scrollContainer }) => {
         newPosition = [0.15, -3.4, 0];
       } else if (width < 1280) {
         // Small desktop
-        newScale = [0.7, 0.7, 0.7];
+        newScale = [0.54, 0.54, 0.54];
         newPosition = [0.2, -3.4, 0];
       } else if (width < 1536) {
         // Desktop (as specified)
@@ -57,7 +57,7 @@ const SpacemanCanvas = ({ scrollContainer }) => {
         newPosition = [1, -3.4, 0];
       } else {
         // Large screens
-        newScale = [0.8, 0.8, 0.8];
+        newScale = [0.60, 0.60, 0.60];
         newPosition = [0.25, -3.4, 0];
       }
 
