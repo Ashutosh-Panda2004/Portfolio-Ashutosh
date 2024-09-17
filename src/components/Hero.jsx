@@ -19,7 +19,7 @@ const Hero = ({ scrollContainer }) => {
     >
       <div className="parallax__content absolute top-[6%] sm:top-[16%] lg:top-[22%] w-full m lg:pl-[38vh] lg:pr-[30vh] xl:pl-96 xl:pr-72 2xl:px-40 3xl:px-60 flex flex-col lg:flex-row items-start z-10">
         <div className="flex-1 lg:mb-0">
-          <h1 className="mb-56 font-medium text-white text-[40px] xs:text-[50px] sm:text-[68px] md:text-[80px] lg:text-[100px] 2xl:text-[180px] leading-[110px] 2xl:leading-[160px]">
+          <h1 className="mb-56 font-medium text-white text-[40px] xs:text-[50px] sm:text-[68px] md:text-[80px] lg:text-[100px] 2xl:text-[120px] leading-[110px] 2xl:leading-[160px]">
             ASHUTOSH PANDA
             <Position />
           </h1>
