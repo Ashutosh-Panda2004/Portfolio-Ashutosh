@@ -1,13 +1,15 @@
 import { SpacemanCanvas } from ".";
 import Position from "./Position";
+import spacebgImage from '/src/assets/spacebg-2.jpg'; // Adjust path as needed
+
 
 const Hero = ({ scrollContainer }) => {
   return (
     // <section className="parallax bg-black">
     <section
-      className="parallax"
+      className="parallax bg-black"
       style={{
-        backgroundImage: `url('src/assets/spacebg-2.jpg')`,
+        backgroundImage: `url(${spacebgImage})`, // Use the imported image
         backgroundSize: "cover", // Adjusts the image to cover the entire section
         backgroundPosition: "center", // Centers the image
         backgroundAttachment: "fixed", // Creates the parallax effect
