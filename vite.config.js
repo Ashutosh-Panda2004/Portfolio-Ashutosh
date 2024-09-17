@@ -4,5 +4,5 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.glb', '**/*.gltf'],
-  base: "/Ashutosh-Portfolio/"
+  base: "/Portfolio-Ashutosh/"
 })
