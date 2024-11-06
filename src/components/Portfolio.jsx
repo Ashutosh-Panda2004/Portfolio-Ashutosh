@@ -6,6 +6,7 @@ import { portfolio } from "../data";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
+import AboutMe from "./Aboutme.jsx";
 
 const ProjectCard = ({
   index,
@@ -52,10 +53,14 @@ const ProjectCard = ({
 
 const Portfolio = () => {
   return (
+    <>
+    <AboutMe></AboutMe>
     <div className='text-center md:text-left md:px-20 lg:px-40'>
       {/* <motion.div variants={textVariant()}>
         <h2 className={`${styles.sectionText}`}>Portfolio</h2>
       </motion.div> */}
+
+      
 
       <h2 className={`${styles.sectionText}`}>Portfolio</h2>
 
@@ -67,6 +72,7 @@ const Portfolio = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
