@@ -105,7 +105,11 @@ const AboutMe = () => {
       </motion.div>
      
     </div>
+
     <SkillsGraph></SkillsGraph>
+
+  
+    
     </>
   );
 };
