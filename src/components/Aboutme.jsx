@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaLinkedin, FaEnvelope, FaGithub, FaLaptopCode, FaTwitter, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaLinkedin, FaEnvelope, FaGithub, FaLaptopCode, FaTwitter, FaInstagram, FaFacebook, FaFileDownload } from 'react-icons/fa';
 import { styles } from '../styles';
 import ashutosh from '../assets/ashutosh.jpeg';
 
@@ -55,6 +55,26 @@ const AboutMe = () => {
               latest industry trends and actively seek opportunities to expand
               my knowledge and contribute to the advancement of technology.
             </p>
+            
+            {/* Resume Download Button */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="mt-8"
+            >
+              <a 
+                href="https://drive.google.com/file/d/10ubMP5crU08QmQF6gtxJ9MpLqn1SXTS5/view?usp=sharing" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-white text-black rounded-full hover:bg-gray-300 transition-all duration-300 transform hover:scale-105"
+              >
+                <FaFileDownload className="mr-2" size={20} />
+                <span className="font-semibold">View Resume</span>
+              </a>
+            </motion.div>
+
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -77,7 +97,6 @@ const AboutMe = () => {
                   <FaGithub className="text-black hover:text-gray-700 hover:scale-150 transition-all duration-300" size={24} />
                 </div>
               </a>
-          
             </motion.div>
           </motion.div>
         </div>
