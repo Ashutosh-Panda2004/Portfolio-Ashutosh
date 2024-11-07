@@ -3,10 +3,12 @@ import { motion } from 'framer-motion';
 import { FaLinkedin, FaEnvelope, FaGithub, FaLaptopCode, FaTwitter, FaInstagram, FaFacebook, FaFileDownload } from 'react-icons/fa';
 import { styles } from '../styles';
 import ashutosh from '../assets/ashutosh.jpeg';
+import SkillsGraph from "./Skillsgraph.jsx";
 
 const AboutMe = () => {
   return (
-    <div className="bg-gray-900 py-20 px-4 md:px-20 lg:px-40">
+    <>
+    <div className="bg-gray-900 py-2 px-4 md:px-20 lg:px-40">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -101,8 +103,17 @@ const AboutMe = () => {
           </motion.div>
         </div>
       </motion.div>
+     
     </div>
+    <SkillsGraph></SkillsGraph>
+    </>
   );
 };
 
 export default AboutMe;
+
+
+
+
+
+
