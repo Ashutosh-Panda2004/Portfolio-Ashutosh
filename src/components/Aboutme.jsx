@@ -67,7 +67,7 @@ const AboutMe = () => {
               className="mt-8"
             >
               <a 
-                href="https://shorturl.at/vnssb" 
+                href="https://shorturl.at/dd8L6" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 bg-white text-black rounded-full hover:bg-gray-300 transition-all duration-300 transform hover:scale-105"
