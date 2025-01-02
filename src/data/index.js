@@ -184,48 +184,48 @@ export const portfolio = [
     description:
       "With a LeetCode contest rating of 1,687, global ranking in the top 13.84%, and 400+ questions completed on multiple coding platforms, I’ve earned multiple badges and maintained a max streak of 95 days.",
     image: codolio,
-    // github: "https://github.com/yourusername/codolio", // Replace with actual GitHub URL
+
   },
   {
     name: "Project-Anvesha",
     description:
       "Anvesha is an online collaborative compiler with a visually appealing UI and animations, currently in progress, with the authentication and text editor features already implemented.",
     image: anvesha,
-    // github: "https://github.com/yourusername/project-anvesha", // Replace with actual GitHub URL
+    // github: "", // Replace with actual GitHub URL
   },
   {
     name: "Project-Vidyakruti",
     description:
       "Vidyakruti is a centralized platform for students to collaborate and study together and share information, currently in progress, with a fully implemented book selling and buying feature.",
     image: vidyakruti,
-    // github: "https://github.com/yourusername/project-vidyakruti", // Replace with actual GitHub URL
+    // github: "", // Replace with actual GitHub URL
   },
   {
     name: "Obyss Agency Clone",
     description:
       "Obyss Agency Clone is a full-featured, modern digital agency website replica, offering a sleek design and essential functionalities tailored for showcasing services, portfolios, and client projects.",
     image: obyss,
-    // github: "https://github.com/yourusername/obyss-agency-clone", // Replace with actual GitHub URL
+    // github: "", // Replace with actual GitHub URL
   },
   {
     name: "PS Algorithm for Patient Management",
     description:
       "Our formalized Priority Score (PS) algorithm, combining base severity, wait time, and ward capacity, improves efficiency by 40% over existing hospital triage systems and reduces patient starvation by 20%.",
     image: sanjeevanialgo,
-    // github: "https://github.com/yourusername/ps-algorithm-patient-management", // Replace with actual GitHub URL
+    // github: "", 
   },
   {
     name: "Project-Sanjeevani",
     description:
       "Sanjeevani integrates city-wide healthcare systems with live OPD, bed availability, real-time ambulance tracking, and pre-fill forms, ensuring efficient operations and improved patient care.",
     image: sanjeevani,
-    // github: "https://github.com/yourusername/project-sanjeevani", // Replace with actual GitHub URL
+    // github: "", 
   },
   {
     name: "Visual Impairment Supporter Interactive Obstacle Navigator (VISION)",
     description:
       "VISION is a Smart Cap equipped with ultrasonic sensors and vibrating motors, utilizing Arduino technology to help visually impaired individuals navigate obstacles.",
     image: vision,
-    // github: "https://github.com/yourusername/vision-obstacle-navigator", // Replace with actual GitHub URL
+    // github: "",
   },
 ];
