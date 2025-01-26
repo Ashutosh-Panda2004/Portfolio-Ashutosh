@@ -95,7 +95,7 @@ const AboutMe = () => {
                   className="inline-flex items-center px-6 py-3 bg-white text-black rounded-full hover:bg-gray-300 transition-transform duration-300 transform hover:scale-105"
                 >
                   <FaFileDownload className="mr-2" size={20} />
-                  <span className="font-semibold">View Resume</span>
+                  {/* <span className="font-semibold">View Resume</span> */}
                 </a>
               </motion.div>
 
