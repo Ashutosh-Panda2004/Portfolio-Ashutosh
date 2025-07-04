@@ -89,7 +89,7 @@ const AboutMe = () => {
                 className="mt-8"
               >
                 <a 
-                  href="https://drive.google.com/file/d/1VzGzZ8LUlVxfu1vbtXf_XqeNlzwBvYaA/view?usp=sharing" 
+                  href="https://drive.google.com/file/d/15aYRw_fDIpv9bnkRCE1iyGkwcMLaDC27/view?usp=sharing" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-6 py-3 bg-white text-black rounded-full hover:bg-gray-300 transition-transform duration-300 transform hover:scale-105"
