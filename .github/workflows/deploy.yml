@@ -51,28 +51,6 @@ jobs:
           name: production-files
           path: ./dist
 
-      - name: Ensure dist has something to publish (create placeholder if empty)
-        run: |
-          if [ ! -d "dist" ] || [ -z "$(ls -A dist 2>/dev/null)" ]; then
-            echo "No build files found — creating placeholder index.html"
-            mkdir -p dist
-            cat > dist/index.html <<'HTML'
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Placeholder build</title>
-  </head>
-  <body>
-    <h1>Placeholder: original build failed</h1>
-    <p>Check the Actions logs for build errors.</p>
-  </body>
-</html>
-HTML
-          else
-            echo "dist folder contains files; proceeding to deploy"
-          fi
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
