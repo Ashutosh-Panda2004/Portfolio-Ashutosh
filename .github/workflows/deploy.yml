@@ -13,8 +13,10 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Setup Node
+        uses: actions/setup-node@v4
         uses: actions/setup-node@v4
         with:
           node-version: 18
@@ -31,8 +33,7 @@ jobs:
           echo "=== printing dist/ contents ==="
           ls -la dist || echo "dist folder does not exist"
 
-      - name: Upload production-ready build files (always upload even if build failed)
-        if: ${{ always() }}
+      - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
         with:
           name: production-files
@@ -47,11 +48,13 @@ jobs:
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v4
         with:
           name: production-files
           path: ./dist
 
       - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
