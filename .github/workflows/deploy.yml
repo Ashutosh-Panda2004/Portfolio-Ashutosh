@@ -23,7 +23,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Build project (allow failure so subsequent steps run)
-        run: npm run build || true
+        run: npm run build:github || true
 
       - name: Show build output (debug - always)
         if: ${{ always() }}

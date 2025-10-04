@@ -1,8 +1,9 @@
-import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-export default defineConfig({
+// Dynamic base based on build mode
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
   assetsInclude: ['**/*.glb', '**/*.gltf'],
-  base: "/Portfolio-Ashutosh/"
-})
+  base: mode === 'github' ? '/Portfolio-Ashutosh/' : '/', // Switch automatically
+}))
