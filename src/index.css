@@ -89,6 +89,9 @@
 }
 
 .parallax__content {
+  /* Keep text inside the viewport while the wider scenery stays centered. */
+  width: min(100%, 100vw);
+  left: max(0px, calc((100% - 100vw) / 2));
   --parallax-speed: 210;
   z-index: 5;
   display: flex;
