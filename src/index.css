@@ -38,6 +38,10 @@
   perspective: 10px;
 }
 
+.wrapper > #hero {
+  container-type: inline-size;
+}
+
 .parallax {
   position: relative;
   min-height: 75vh;
@@ -89,11 +93,11 @@
 }
 
 .parallax__content {
-  /* Keep text inside the viewport while the wider scenery stays centered. */
-  width: min(100%, 100vw);
-  left: max(0px, calc((100% - 100vw) / 2));
+  /* Use the scroll container's visible width, excluding its scrollbar. */
+  width: min(100%, 100cqw);
+  left: max(0px, calc((100% - 100cqw) / 2));
   --parallax-speed: 210;
-  z-index: 5;
+  z-index: 20;
   display: flex;
   flex-direction: column;
   align-items: center;
